@@ -3,6 +3,7 @@
   background-image: url('https://cms-assets.tutsplus.com/uploads/users/107/posts/26488/final_image/41-space-scrolling-background850-2.jpg');
   background-repeat: no-repeat;
   background-position: 50% 100%;
+  position: relative;
 }
 .row div:hover{
   animation: alien 10s linear;
@@ -22,5 +23,36 @@
   }
   100%{
     background-position: 50% 100%;
+  }
+}
+.row div img{
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+}
+.row div:hover img{
+  animation: ufo 10s linear;
+}
+@keyframes ufo {
+  0%{
+    top: 50%;
+    left: 35%;
+  }
+  25%{
+    top: 0%;
+    left: 40%;
+  }
+  50%{
+    top: 50%;
+    left: 50%;
+  }
+  75%{
+    top: 75%;
+    left: 40%;
+  }
+  100%{
+    top: 80%;
+    left: 35%;
   }
 }
