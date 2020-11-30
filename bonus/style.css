@@ -1,0 +1,26 @@
+.row div{
+  height: 850px;
+  background-image: url('https://cms-assets.tutsplus.com/uploads/users/107/posts/26488/final_image/41-space-scrolling-background850-2.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+.row div:hover{
+  animation: alien 10s linear;
+}
+@keyframes alien {
+  0%{
+    background-position: 50% 100%;
+  }
+  25%{
+    background-position: 50% 50%;
+  }
+  50%{
+    background-position: 50% 0;
+  }
+  75%{
+    background-position: 50% 50%;
+  }
+  100%{
+    background-position: 50% 100%;
+  }
+}
